@@ -1,13 +1,16 @@
-apply plugin: 'com.android.feature'
+apply plugin: 'com.android.library'
 
 android {
     compileSdkVersion 27
-    baseFeature true
+
     defaultConfig {
         minSdkVersion 23
         targetSdkVersion 27
         versionCode 1
         versionName "1.0"
+
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+
     }
     buildTypes {
         release {
@@ -18,8 +21,7 @@ android {
 }
 
 dependencies {
-    api 'com.android.support:appcompat-v7:27.1.1'
-    api 'com.android.support.constraint:constraint-layout:1.1.2'
-    application project(':app')
-    feature project(':feature')
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    implementation "com.android.support:appcompat-v7:27.1.1"
+    androidTestImplementation 'junit:junit:4.12'
 }
