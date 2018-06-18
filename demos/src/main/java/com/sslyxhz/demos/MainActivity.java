@@ -14,6 +14,7 @@ import android.widget.Toast;
 import com.sslyxhz.demos.animation.AnimationActivity;
 import com.sslyxhz.demos.camera.CameraActivity;
 import com.sslyxhz.demos.nanohttpd.WebViewActivity;
+import com.sslyxhz.demos.permission.PermissionActivity;
 import com.sslyxhz.demos.toast.ToastDemoActivity;
 
 import java.util.ArrayList;
@@ -39,6 +40,7 @@ public class MainActivity extends AppCompatActivity {
         mFunctions.add("Animation");
         mFunctions.add("Camera");
         mFunctions.add("Toast");
+        mFunctions.add("Permission");
 
         mFunctionsAdapter = new FunctionsAdapter(mFunctions);
     }
@@ -68,6 +70,8 @@ public class MainActivity extends AppCompatActivity {
                         startActivity(new Intent(MainActivity.this, CameraActivity.class));
                     } else if("Toast".equals(mFunctionName)){
                         startActivity(new Intent(MainActivity.this, ToastDemoActivity.class));
+                    } else if("Permission".equals(mFunctionName)){
+                        startActivity(new Intent(MainActivity.this, PermissionActivity.class));
                     } else{
                         Toast.makeText(MainActivity.this, "Miss:"+mFunctionName, Toast.LENGTH_SHORT).show();
                     }
