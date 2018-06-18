@@ -1,4 +1,4 @@
-package com.sslyxhz.demos;
+package com.sslyxhz.demos.toast;
 
 import android.graphics.Color;
 import android.graphics.Typeface;
@@ -11,6 +11,7 @@ import android.text.style.StyleSpan;
 import android.view.View;
 import android.widget.Toast;
 
+import com.sslyxhz.demos.R;
 import com.sslyxhz.libtoast.Toasty;
 
 import static android.graphics.Typeface.BOLD_ITALIC;

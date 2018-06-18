@@ -1,5 +1,7 @@
 <resources>
-    <string name="app_name">Toasty Sample</string>
+    <string name="app_name">Demos</string>
+
+    <!-- toast -->
     <string name="normal_toast_with_icon">NORMAL TOAST (WITH ICON)</string>
     <string name="normal_toast_without_icon">NORMAL TOAST (WITHOUT ICON)</string>
     <string name="warning_toast">WARNING TOAST</string>
@@ -8,4 +10,23 @@
     <string name="error_toast">ERROR TOAST</string>
     <string name="success_toast">SUCCESS TOAST</string>
     <string name="custom_configuration">CUSTOM CONFIGURATION</string>
+
+
+    <!-- camera -->
+    <string name="picture">Picture</string>
+    <string name="description_info">Info</string>
+    <string name="request_permission">This sample needs camera permission.</string>
+    <string name="camera_error">This device doesn\'t support Camera2 API.</string>
+    <string name="intro_message">
+        <![CDATA[
+
+
+            This sample demonstrates the basic use of Camera2 API. Check the source code to see how
+            you can display camera preview and take pictures.
+
+
+        ]]>
+    </string>
+
+
 </resources>
